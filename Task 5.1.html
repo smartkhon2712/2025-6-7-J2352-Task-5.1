@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5.1 - Fashion E-commerce Product Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      #flex-container {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100vh;
+      }
+      .left-content,
+      .right-content {
+        flex: 50%;
+        height: 100vh;
+      }
+      .left-content {
+        display: flex;
+        gap: 5px;
+      }
+      .left-images {
+        flex-grow: 2;
+      }
+      .right-images {
+        flex-grow: 1;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+      .left-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .right-images > div {
+        height: 25%;
+      }
+      .right-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-family: "Montserrat";
+        font-size: 14px;
+        padding: 30px;
+      }
+      .begin-session {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 100px;
+      }
+      .image-card {
+        background-image: url(./images/Card.png);
+        width: 25px;
+        height: 25px;
+      }
+      .details,
+      .size-guide,
+      .add-to-bag,
+      .add-to-favorite {
+        text-align: right;
+      }
+      .squares {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flex-container">
+      <div class="left-content">
+        <div class="left-images">
+          <img src="./images/image1.png" alt="image-1" />
+        </div>
+        <div class="right-images">
+          <div><img src="./images/image2.png" alt="image-2" /></div>
+          <div><img src="./images/image3.png" alt="image-3" /></div>
+          <div><img src="./images/image4.png" alt="image-4" /></div>
+          <div><img src="./images/image5.png" alt="image-5" /></div>
+        </div>
+      </div>
+      <!--Phần nội dung bên phải-->
+      <div class="right-content">
+        <div class="begin-session">
+          <div>BEGIN SESSION</div>
+          <div class="image-card"></div>
+        </div>
+        <div class="content">
+          <div class="details">
+            <h2>TRACK BUTTONS</h2>
+            <div>$ 199,99</div>
+            <div>IVORY WHITE | 7272/337337</div>
+            <p>
+              We work with our supplies, workers, unions and <br />
+              international bodies to develop a supply chain where human <br />
+              rights are promoted and respected, contributing to the <br />
+              United Nations Sustainable Development Goals.
+            </p>
+          </div>
+          <div class="squares">
+            <div>EP</div>
+            <div>P</div>
+            <div>M</div>
+            <div>G</div>
+            <div>EG</div>
+          </div>
+          <div class="size-guide">SIZE GUIDE</div>
+          <div class="add-to-bag"><button>ADD TO BAG</button></div>
+          <div class="add-to-favorite">
+            ADD TO FAVORITES<br />
+            CALCULATE SHIPPING AND DELIVERY
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
