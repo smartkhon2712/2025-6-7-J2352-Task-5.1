@@ -40,7 +40,7 @@
         object-fit: cover;
       }
       .right-images > div {
-        height: 25%;
+        height: calc(25% - 3.75px);
       }
       .right-images img {
         width: 100%;
@@ -64,8 +64,8 @@
       }
       .image-card {
         background-image: url(./images/Card.png);
-        width: 25px;
-        height: 25px;
+        width: 27px;
+        height: 27px;
       }
       .details,
       .size-guide,
@@ -73,11 +73,52 @@
       .add-to-favorite {
         text-align: right;
       }
-      .squares {
+      h2 {
+        font-size: 32px;
+        margin: 0px;
+      }
+      .price {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .color {
+        color: #828282;
+        margin-bottom: 20px;
+      }
+      .sizes {
         display: flex;
         gap: 5px;
         flex-direction: row;
         justify-content: flex-end;
+        margin-top: 20px;
+      }
+      .squares {
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        margin: 3px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid black;
+      }
+      p {
+        line-height: 18px;
+      }
+      .size-guide {
+        font-size: 12px;
+        text-decoration: underline;
+        margin-bottom: 40px;
+      }
+      button {
+        font-size: 18px;
+        padding: 22px 115px;
+        background-color: black;
+        color: white;
+      }
+      .add-to-favorite {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -103,8 +144,8 @@
         <div class="content">
           <div class="details">
             <h2>TRACK BUTTONS</h2>
-            <div>$ 199,99</div>
-            <div>IVORY WHITE | 7272/337337</div>
+            <div class="price">$ 199,99</div>
+            <div class="color">IVORY WHITE | 7272/337337</div>
             <p>
               We work with our supplies, workers, unions and <br />
               international bodies to develop a supply chain where human <br />
@@ -112,12 +153,12 @@
               United Nations Sustainable Development Goals.
             </p>
           </div>
-          <div class="squares">
-            <div>EP</div>
-            <div>P</div>
-            <div>M</div>
-            <div>G</div>
-            <div>EG</div>
+          <div class="sizes">
+            <div class="squares">EP</div>
+            <div class="squares">P</div>
+            <div class="squares">M</div>
+            <div class="squares">G</div>
+            <div class="squares">EG</div>
           </div>
           <div class="size-guide">SIZE GUIDE</div>
           <div class="add-to-bag"><button>ADD TO BAG</button></div>
